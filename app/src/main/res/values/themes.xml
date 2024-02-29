@@ -1,0 +1,24 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.ECommerceApp" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="drawerArrowStyle">@style/DrawerArrowToggle</item>
+        <item name="titleTextColor">@color/white</item>
+    </style>
+
+    <style name="Theme.ECommerceApp" parent="Base.Theme.ECommerceApp" />
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+
+    </style>
+    
+    <style name="DrawerArrowToggle" parent="@style/Widget.AppCompat.DrawerArrowToggle">
+        <item name="spinBars">true</item>
+        <item name="color">@color/white</item>
+    </style>
+        
+
+</resources>

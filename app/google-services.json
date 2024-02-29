@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "756984620867",
+    "project_id": "ecommerce-app-49597",
+    "storage_bucket": "ecommerce-app-49597.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:756984620867:android:46612df4ec08cdb8e9b1f6",
+        "android_client_info": {
+          "package_name": "com.rony.ecommerceapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDXOWviXZZv3lvJxW55TgYp75OUosxMaic"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

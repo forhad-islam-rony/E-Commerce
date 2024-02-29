@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragments.OrderFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/animationView"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            app:lottie_rawRes="@raw/order"
+            />
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Total Price : 00$"
+            android:background="#99d3ff"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="10dp"
+            android:padding="10dp"
+            android:fontFamily="@font/amethysta"
+            android:textColor="@color/black"
+            />
+        <TextView
+            android:id="@+id/textorder"
+            android:layout_marginTop="150dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="You have not purchased anything yet"
+            android:textStyle="bold"
+            android:fontFamily="@font/amethysta"
+            android:textSize="30sp"
+            android:gravity="center"
+            android:visibility="gone"
+            android:textColor="@color/blue"
+            android:layout_marginBottom="20dp"
+            />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+          >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="10dp"
+                >
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/order_rec"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    tools:listitem="@layout/my_order_item" />
+
+            </LinearLayout>
+
+        </ScrollView>
+
+        <Button
+            android:id="@+id/clear_all"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Clear All"
+            android:textStyle="bold"
+            android:layout_marginBottom="10dp"
+            android:textColor="@android:color/white"
+            android:backgroundTint="@color/blue"
+            android:layout_gravity="center"
+           />
+
+
+    </LinearLayout>
+
+</FrameLayout>
